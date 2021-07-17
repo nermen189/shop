@@ -1,0 +1,868 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height:5600px;
+    overflow-x: hidden;
+}
+.draw{
+    width:100%;
+    height:450px;
+    background-color: #1E90FF;
+    position: relative;
+    top:350px;
+    transform: rotate(180deg);
+}
+.draw svg{
+    position: absolute;
+    top:150px;
+} 
+header #logo {
+    width:90px;
+    height:90px;
+    position: absolute;
+    top:2px;
+    left:20px;
+}
+header h3 {
+    position: absolute;
+    top:30px;
+    left:60px;
+    font-size: 35px;
+    font-family: 'Volkhov', serif;
+
+}
+header h3 span{
+    color:red;
+}
+header ul li a {
+    text-decoration: none;
+    color:black;
+}
+header ul li {
+    list-style: none;
+    margin-left: 30px;
+    float: left;
+}
+header ul{
+    position: absolute;
+    top:40px;
+    left:800px;
+}
+header ul li a:hover {
+    color:#1E90FF;
+}
+header #icons img{
+    width:20px;
+    height:20px;
+    margin: 10px;
+}
+
+header #icons{
+    position: absolute;
+    top:30px;
+    left:1400px;
+}
+#main-img img {
+    position: absolute;
+    top:-350px;
+    left:200px;
+    width:1100px;
+    height:700px;
+}
+#heading h1 {
+    color:red;
+    font-family: 'Volkhov', serif;
+    position: absolute;
+    top:200px;
+    left:150px;
+    font-size: 60px;   
+}
+#heading p{
+    width:500px;
+    position: absolute;
+    left:100px;
+    top:300px;
+}
+#heading button{
+    width:150px;
+    height:50px;
+    border: 2px solid red;
+    border-radius: 20px;
+    color:black;
+    position: absolute;
+    top:400px;
+    left:200px;
+    background-color: white;
+}
+#heading button:hover{
+    background-color: red;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#category{
+    width:100%;
+    height:5000px;
+    position: absolute;
+    background-color: black;
+    top:0;
+    opacity: .6;
+    transition: all 2s;
+    display: none;
+}
+#caregory-info{
+   width:1200px;
+   height:400px;
+   position: relative;
+   top:-350px;
+   left:100px;
+   background-color: white;
+   display: none;
+}
+#caregory-info #clothing-name{
+    position: absolute;
+    top:20px;
+    left:990px;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+#caregory-info #clothing{
+    position: absolute;
+    top:60px;
+    left:930px;
+    border-left: 1px solid grey;
+}
+#caregory-info #clothing a{
+    text-decoration: none;
+}
+#caregory-info #clothing a img {
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    margin: 20px;
+    display: block;
+}
+#caregory-info #clothing a img:hover{
+    border:1px solid blue;
+}
+#caregory-info #clothing-info{
+    position: absolute;
+    top:60px;
+    left:1000px;
+}
+#caregory-info #clothing-info a{
+    text-decoration: none;
+    color:black;
+}
+#caregory-info #clothing-info a:hover{
+    color:blue;
+}
+#caregory-info #clothing-info a p{
+    padding:5px; 
+    margin-top: 30px;
+    border-bottom: 1px solid grey;
+}
+#caregory-info #categories{
+    position: absolute;
+    top:20px;
+    left:700px;
+    border-bottom: 1px solid grey;
+}
+#caregory-info #types{
+    position: absolute;
+    top:60px;
+    left:560px;
+    border-left: 1px solid grey;
+}
+#caregory-info #types a img {
+    width:60px;
+    height:90px;
+    margin-left: 90px;
+    margin-top: 20px;
+
+}
+#caregory-info #types a img:hover{
+    border:1px solid blue;
+}
+#caregory-info #types a{
+    text-decoration: none;
+}
+#caregory-info #more a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    color:black;
+}
+#caregory-info #more a:hover{
+    color:blue;
+}
+#caregory-info #more{
+    position: absolute;
+    top:40px;
+    left:40px;
+    margin: 10px;
+
+}
+#caregory-info #more2 a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    color:black;
+}
+#caregory-info #more2 a:hover{
+  color:blue;
+}
+#caregory-info #more2{
+    position: absolute;
+    top:40px;
+    left:300px;
+    margin: 10px;
+}
+#caregory-info #remove{
+    position: absolute;
+    top:370px;
+    left:1150px;
+}
+#caregory-info #remove:hover{
+    cursor: pointer;
+}
+/*the end of this part*/
+#fashion{
+    position: relative;
+    background-color: white;
+    width:100%;
+    height:600px;
+    top:550px;
+}
+ h2{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    width:280px;
+    font-family:sans-serif ;
+    font-size: 30px;
+    position: absolute;
+    left:550px;
+    color:red;
+    top:940px;
+}
+h2:hover{
+    color:#1E90FF;
+}
+#fashion #clothe {
+    position: absolute;
+    top:50px;
+    left:200px;
+}
+#fashion #clothe img {
+    width:300px;
+    height:400px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#fashion #clothe h3{
+    position: absolute;
+    top:360px;
+    background-color: black;
+    opacity: .5;
+    left:10px;
+    width:94%;
+    text-align: center;
+    color:white;
+    height:50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#fashion #shoes {
+    position: absolute;
+    top:50px;
+    left:530px;
+}
+#fashion #shoes img {
+    width:300px;
+    height:190px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#fashion #shoes h3{
+    position: absolute;
+    top:150px;
+    background-color: black;
+    opacity: .5;
+    left:10px;
+    width:94%;
+    text-align: center;
+    color:white;
+    height:50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#fashion #bags {
+    position: absolute;
+    top:260px;
+    left:530px;
+}
+#fashion #bags img {
+    width:300px;
+    height:190px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#fashion #bags h3{
+    position: absolute;
+    top:150px;
+    background-color: black;
+    opacity: .5;
+    left:10px;
+    width:94%;
+    text-align: center;
+    color:white;
+    height:50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#fashion #scarves {
+    position: absolute;
+    top:50px;
+    left:860px;
+}
+#fashion #scarves img {
+    width:300px;
+    height:400px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#fashion #scarves h3{
+    position: absolute;
+    top:360px;
+    background-color: black;
+    opacity: .5;
+    left:10px;
+    width:94%;
+    text-align: center;
+    color:white;
+    height:50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#fashion div img:hover {
+   border:1px solid blue;
+   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   cursor: pointer;
+}
+
+/*the end of this part */
+ .best{
+     background-color: #1E90FF;
+     position: relative;
+     top:580px;
+     width:100%;
+     height:650px;
+ }
+ .best svg {
+     position: absolute;
+     top:400px;
+ }
+.best h1 {
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size: 70px;
+    padding: 10px;
+    font-family: 'Stint Ultra Condensed', cursive;
+
+}
+.best p {
+    position: absolute;
+    top:100px;
+    left:360px;
+    font-family:sans-serif;
+}
+/* 3d slideShow styles */
+.modern .hi-slide ul li img  {
+    background-position: center;
+    width:70%;
+    height:80%;
+ 
+ }
+ .modern .hi-slide{
+     position: relative;
+     margin: 115px auto 0;
+     height:292px;
+     width:754px;
+ }
+ .modern .hi-slide .hi-next,
+ .modern .hi-slide .hi-prev{
+     position: absolute;
+    top:50%;
+    width:40px;
+    height:40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    transition: all .7s;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ .modern .hi-slide .hi-next:hover,
+ .modern .hi-slide .hi-prev:hover{
+     opacity: 1;
+     background-color: white;
+ }
+ .modern .hi-slide .hi-prev{
+     left:-70px;
+ }
+ .modern .hi-slide .hi-next::before{
+     content: ">";
+ }
+ .modern .hi-slide .hi-prev::before{
+     content: "<";
+ }
+ .modern .hi-slide .hi-next{
+     right:-70px;
+ }
+ .modern .hi-slide ul{
+     position: relative;
+     width:754px;
+     height:292px;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ 
+ }
+ .modern .hi-slide ul li {
+     position: absolute;
+     overflow: hidden;
+     z-index: 0;
+     left:377px;
+     width:0;
+     height:0;
+     margin: 0;
+     padding: 0;
+     top:147px;
+     /*
+     border:3px solid white;
+     */
+     background-color: transparent;
+     cursor: pointer;
+ }
+/*the end of this part */
+#pick{
+    position: relative;
+    top:200px;
+    background-color: white;
+    width:100%;
+    height:600px;
+    margin: 0;
+}
+#pick h1 {
+    position: absolute;
+    top:2px;
+    left:550px;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 40px;
+    border-bottom: 1px solid #1E90FF;
+    width:300px;
+}
+#pick #skitter-two{
+    top:200px;
+    left:800px;
+}
+#pick #skitter-three{
+    left:400px;
+  top:10px;
+}
+#pick #skitter-four{
+    left:50px;
+    top:-400px;
+}
+/*the end of this part*/
+
+#count{
+    width:100%;
+    height:500px;
+    position: relative;
+    top:400px;
+    background-color: #1E90FF;
+}
+#count img {
+    width:400px;
+    height:400px;
+    margin: 40px;
+}
+#count h1 {
+    position: absolute;
+    top:10px;
+    left:900px;
+}
+#count #hoursDiv{
+    width:80px;
+    height:80px;
+    background-color: white;
+    position: absolute;
+    top:200px;
+    left:900px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition-delay: 200ms;
+}
+#count #hours h4{
+    text-align: center;
+    background-color: red;
+    height:20px;
+    padding: 10px;
+    font-size: 20px;
+}
+#count #hours h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 30px; 
+}
+
+#count #minutesDiv{
+    width:80px;
+    height:80px;
+    background-color: white;
+    position: absolute;
+    top:200px;
+    left:1000px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition-delay: 1000ms;
+}
+#count #minutes h4{
+    text-align: center;
+    background-color: red;
+    height:20px;
+    padding: 10px;
+    font-size: 18px;
+}
+#count #minutes h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 30px; 
+}
+
+#count #secondsDiv{
+    width:80px;
+    height:80px;
+    background-color: white;
+    position: absolute;
+    top:200px;
+    left:1100px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition-delay: 1800ms;
+}
+#count #seconds h4{
+    text-align: center;
+    background-color: red;
+height:20px;
+    padding: 10px;
+    font-size: 18px;
+}
+#count #seconds h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 30px; 
+}
+/*the end of this part*/
+#app{
+    background: url("background.jpg") rgba(0, 0, 0, 0.6)
+    fixed no-repeat;
+    background-size: cover;
+    position: relative;
+    top:600px;
+    width:100%;
+    height:500px;
+    background-blend-mode: darken;
+}
+#app h1 {
+    color:white;
+    position: absolute;
+    top:20px;
+    left:550px;
+}
+#app p {
+    color:white;
+    position: absolute;
+    top:150px;
+    left:350px;
+}
+#app #android{
+    width:180px;
+    height:60px;
+    border:1px solid  white;
+   position: absolute;
+   top:350px;
+   left:720px;
+}
+#app #android h5{
+     color:white;
+     font-weight: bold;
+     font-size: 20px;
+     margin-left: 50px;
+     margin-top: 5px;
+}
+#app #android img {
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:3px;
+    left:0px;
+}
+#app #android:hover{
+  cursor: pointer;
+  border: 2px solid #1E90FF;
+}
+
+#app #apple{
+    width:180px;
+    height:60px;
+    border:1px solid  white;
+   position: absolute;
+   top:350px;
+   left:480px;
+}
+#app #apple h5{
+     color:white;
+     font-weight: bold;
+     font-size: 20px;
+     margin-left: 50px;
+     margin-top: 5px;
+}
+#app #apple img {
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:3px;
+    left:0px;
+}
+#app #apple:hover{
+  cursor: pointer;
+  border: 2px solid #1E90FF;
+}
+/*the end of this part*/
+#news{
+    width:100%;
+    height:500px;
+    position: relative;
+    top:700px;
+}
+#news h1 {
+    color:black;
+    position: absolute;
+    top:20px;
+    left:560px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    width:300px;
+    border-bottom:1px solid #1E90FF
+}
+#news #first{
+    width:300px;
+    height:200px;
+    position: absolute;
+    top:250px;
+    left:150px;
+}
+#news #first img {
+    width:100%;
+    height:180px;
+    border:2px solid black;
+}
+#news #first h2{
+    font-size: 20px;
+    color:black;
+    width:200px;
+    background-color: white;
+    margin-left: 25px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: absolute;
+    top:160px;
+    left:20px;
+}
+#news #first:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+#news #second{
+    width:300px;
+    height:200px;
+    position: absolute;
+    top:250px;
+    left:550px;
+}
+#news #second img {
+    width:100%;
+    height:180px;
+    border:2px solid black;
+}
+#news #second h2{
+    font-size: 20px;
+    color:black;
+    width:200px;
+    background-color: white;
+    margin-left: 25px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: absolute;
+    top:160px;
+    left:20px;
+}
+#news #second:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#news #third{
+    width:300px;
+    height:200px;
+    position: absolute;
+    top:250px;
+    left:950px;
+}
+#news #third img {
+    width:100%;
+    height:180px;
+    border:2px solid black;
+}
+#news #third h2{
+    font-size: 20px;
+    color:black;
+    width:200px;
+    background-color: white;
+    margin-left: 25px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: absolute;
+    top:160px;
+    left:20px;
+}
+#news #third:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/* the about part styles */
+
+#about{
+    width:100%;
+    height:500px;
+    position: relative;
+    top:900px;
+    background-color: #1E90FF;
+}
+ #about #aboutInfo{
+    color:black;
+    font-family: 'Stint Ultra Condensed', cursive;
+   position: absolute;
+   top:30px;
+   left:10px;
+   font-size: 40px;
+   border: none;
+}
+#about #aboutPra{
+    position:absolute;
+    top:100px;
+    left:30px;
+    width:300px;
+    color:white;
+}
+#about #links {
+    position: absolute;
+    top:30px;
+    left:500px;
+    font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 40px;
+  border:none;
+  color:black;    
+}
+#about ul {
+    list-style: none;
+    position: absolute;
+    top:100px;
+    left:570px;
+}
+#about ul li {
+    color:white;
+    margin: 10px;
+}
+#about #latest {
+    position: absolute;
+    top:30px;
+    left:1000px;
+    font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 40px;
+  border:none;
+  color:black;     
+}
+#about #images {
+    position: absolute;
+    top:100px;
+    left:990px;
+}
+#about #images img {
+    width:250px;
+    height:150px;
+    display: block;
+    margin: 30px;
+}
+#about #images img:hover{
+    border:1px solid blue;
+   cursor: pointer;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#location{
+    color:black;
+    font-family: 'Stint Ultra Condensed', cursive;
+   position: absolute;
+   top:250px;
+   left:10px;
+   font-size: 40px;
+   border: none;    
+}
+#map{
+    width:300px;
+    height:170px;
+    position: absolute;
+    top:320px;
+    left:20px;
+}
+#follow{
+    color:black;
+    font-family: 'Stint Ultra Condensed', cursive;
+   position: absolute;
+   top:350px;
+   left:500px;
+   font-size: 40px;
+   border: none;    
+}
+#about #icons{
+    position: absolute;
+    top:400px;
+    left:590px;
+}
+#about #icons img {
+    width:20px;
+    height:20px;
+    margin: 5px;
+}
+#about ul li:hover{
+    cursor: pointer;
+}
